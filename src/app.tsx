@@ -1,9 +1,7 @@
+import { JSX } from 'react';
 
-function App() {
+const App: React.FC = (): JSX.Element => (
+    <div>Hi there</div>
+);
 
-  return (
-    <div>hi there</div>
-  )
-}
-
-export default App
+export default App;
