@@ -64,6 +64,17 @@ export default tseslint.config([
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       '@typescript-eslint/ban-ts-comment': 'error',
+      '@typescript-eslint/typedef': [
+        'error',
+        {
+          variableDeclaration: true,
+          memberVariableDeclaration: true,
+          propertyDeclaration: true,
+          parameter: true,
+          arrowParameter: true,
+          variableDeclarationIgnoreFunction: false,
+        },
+      ],
     },
   },
 ])
