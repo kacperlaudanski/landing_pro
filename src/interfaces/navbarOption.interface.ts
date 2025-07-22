@@ -1,4 +1,4 @@
-import { Path } from '../../enums';
+import { Path } from '../enums';
 
 export interface NavbarOption {
   label: string;

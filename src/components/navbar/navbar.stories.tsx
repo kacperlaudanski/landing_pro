@@ -1,8 +1,9 @@
 import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
 import { JSX } from 'react';
 import { BrowserRouter } from 'react-router';
+
 import { Path } from '../../enums';
-import { NavbarOption } from '../interfaces';
+import { NavbarOption } from '../../interfaces';
 
 import ExampleLogo from './images/logo.svg';
 import { Navbar } from './navbar.component';
