@@ -1,6 +1,9 @@
 import { X } from 'lucide-react';
 import { JSX } from 'react';
-import { CloseButton, OptionsContainer, RightContainer, Wrapper } from './sideMenu.styled';
+
+import { NavbarOption } from '../../interfaces';
+
+import { CloseButton, Option, OptionButton, OptionsContainer, Wrapper } from './sideMenu.styled';
 import { SideMenuProps } from './sideMenu.types';
 
 export const SideMenu: React.FC<SideMenuProps> = (props: SideMenuProps): JSX.Element => {
@@ -8,14 +11,19 @@ export const SideMenu: React.FC<SideMenuProps> = (props: SideMenuProps): JSX.Ele
 
   return (
     <Wrapper $isOpen={isOpen} className={className}>
+      <CloseButton onClick={closeHandler}>
+        <X />
+      </CloseButton>
       <OptionsContainer>
-
+      {options.map(({ label, path, icon: Icon }: NavbarOption): JSX.Element => (
+          <Option>
+            <OptionButton>
+              {Icon && <Icon />}
+              {label}
+            </OptionButton>
+          </Option>
+        ))}
       </OptionsContainer>
-      <RightContainer>
-        <CloseButton onClick={closeHandler}>
-          <X />
-        </CloseButton>
-      </RightContainer>
     </Wrapper>
   );
 };

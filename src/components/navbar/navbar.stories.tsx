@@ -1,4 +1,5 @@
 import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
+import { Home, PersonStanding } from 'lucide-react';
 import { JSX } from 'react';
 import { BrowserRouter } from 'react-router';
 
@@ -24,11 +25,13 @@ const exampleOptions: NavbarOption[] = [
     label: 'Home',
     path: Path.Main,
     isActive: true,
+    icon: Home,
   },
   {
     label: 'About',
     path: Path.Main,
     isActive: false,
+    icon: PersonStanding,
   },
 ];
 

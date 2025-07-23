@@ -38,7 +38,7 @@ export const Navbar: React.FC<NavbarProps> = (props: NavbarProps): JSX.Element =
           </BurgerButton>
         )}
       </Wrapper>
-      <SideMenu isOpen={isSideMenuOpen} closeHandler={handleClosing} options={[]} />
+      <SideMenu isOpen={isSideMenuOpen} closeHandler={handleClosing} options={options} />
     </>
   );
 };
