@@ -1,8 +1,10 @@
 import { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
+import { Home, PersonStanding } from 'lucide-react';
 import { JSX } from 'react';
 import { BrowserRouter } from 'react-router';
+
 import { Path } from '../../enums';
-import { NavbarOption } from '../interfaces';
+import { NavbarOption } from '../../interfaces';
 
 import ExampleLogo from './images/logo.svg';
 import { Navbar } from './navbar.component';
@@ -23,11 +25,13 @@ const exampleOptions: NavbarOption[] = [
     label: 'Home',
     path: Path.Main,
     isActive: true,
+    icon: Home,
   },
   {
     label: 'About',
     path: Path.Main,
     isActive: false,
+    icon: PersonStanding,
   },
 ];
 

@@ -1,4 +1,4 @@
-import { NavbarOption } from '../interfaces';
+import { NavbarOption } from '../../interfaces';
 
 export interface NavbarProps {
   logo: string;
