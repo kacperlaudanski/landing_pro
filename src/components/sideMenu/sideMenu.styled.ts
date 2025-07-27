@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import { Color } from '../../enums';
 
+import { Color } from '../../enums';
 import { StyledComponent } from '../../types';
+
 import { SideMenuBaseProps } from './sideMenu.types';
 
 export const Wrapper: StyledComponent<SideMenuBaseProps> = styled.aside<SideMenuBaseProps>`
