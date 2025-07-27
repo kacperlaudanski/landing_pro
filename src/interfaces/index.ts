@@ -1,1 +1,1 @@
-export type { NavbarOption } from './navbarOption.interface';
+export type { MenuOption } from './menuOption.interface';

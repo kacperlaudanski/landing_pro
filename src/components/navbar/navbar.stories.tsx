@@ -4,7 +4,7 @@ import { JSX } from 'react';
 import { BrowserRouter } from 'react-router';
 
 import { Path } from '../../enums';
-import { NavbarOption } from '../../interfaces';
+import { MenuOption } from '../../interfaces';
 
 import ExampleLogo from './images/logo.svg';
 import { Navbar } from './navbar.component';
@@ -20,7 +20,7 @@ const meta: Meta<NavbarProps> = {
 };
 export default meta;
 
-const exampleOptions: NavbarOption[] = [
+const exampleOptions: MenuOption[] = [
   {
     label: 'Home',
     path: Path.Main,

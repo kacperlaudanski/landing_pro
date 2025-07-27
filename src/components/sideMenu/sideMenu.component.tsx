@@ -1,13 +1,15 @@
 import { X } from 'lucide-react';
 import { JSX } from 'react';
+import { NavigateFunction, useNavigate } from 'react-router';
 
-import { NavbarOption } from '../../interfaces';
+import { MenuOption } from '../../interfaces';
 
 import { CloseButton, Option, OptionButton, OptionsContainer, Wrapper } from './sideMenu.styled';
 import { SideMenuProps } from './sideMenu.types';
 
 export const SideMenu: React.FC<SideMenuProps> = (props: SideMenuProps): JSX.Element => {
   const { className, options, isOpen, closeHandler }: SideMenuProps = props;
+  const navigate: NavigateFunction = useNavigate();
 
   return (
     <Wrapper $isOpen={isOpen} className={className}>
@@ -15,9 +17,9 @@ export const SideMenu: React.FC<SideMenuProps> = (props: SideMenuProps): JSX.Ele
         <X />
       </CloseButton>
       <OptionsContainer>
-      {options.map(({ label, path, icon: Icon }: NavbarOption): JSX.Element => (
+        {options.map(({ label, path, icon: Icon }: MenuOption): JSX.Element => (
           <Option>
-            <OptionButton>
+            <OptionButton onClick={(): Promise<void> | void => navigate(path)}>
               {Icon && <Icon />}
               {label}
             </OptionButton>
