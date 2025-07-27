@@ -8,4 +8,8 @@ export const GlobalStyles: React.NamedExoticComponent<object> = createGlobalStyl
     font-family: 'Poppins', sans-serif;
     background-color: red;
   }
+
+  p {
+    margin: 0;
+  }
 `;
