@@ -32,7 +32,7 @@ export const Footer: React.FC<FooterProps> = (props: FooterProps): JSX.Element =
         <SocialsContainer>
           {/* TODO: Move brand icon to separate component */}
           {socials.map((item: SocialMediaItem): JSX.Element => (
-            <SocialItem href={item.path} key={item.path}>
+            <SocialItem href={item.path} key={item.logo.path}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

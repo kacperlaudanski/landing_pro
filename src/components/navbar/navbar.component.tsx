@@ -1,8 +1,8 @@
 import { useMediaQuery } from '@mui/material';
 import { Menu } from 'lucide-react';
 import { JSX, useState } from 'react';
-
 import { Breakpoint } from '../../enums';
+
 import { MenuOption } from '../../interfaces';
 import { SideMenu } from '../sideMenu/sideMenu.component';
 
@@ -22,10 +22,10 @@ export const Navbar: React.FC<NavbarProps> = (props: NavbarProps): JSX.Element =
     <>
       <Wrapper className={className}>
         <Logo alt='logo' src={logo} />
-        {isSmallDesktop ? (
+        {!!isSmallDesktop ? (
           <OptionsWrapper>
             {options.map((option: MenuOption): JSX.Element => (
-              <Option $isActive={option.isActive}>
+              <Option key={option.label} $isActive={option.isActive}>
                 <StyledLink to={option.path}>
                   {option.label}
                 </StyledLink>

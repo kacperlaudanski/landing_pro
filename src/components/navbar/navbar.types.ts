@@ -1,8 +1,8 @@
-import { NavbarOption } from '../../interfaces';
+import { MenuOption } from '../../interfaces';
 
 export interface NavbarProps {
   logo: string;
-  options: NavbarOption[];
+  options: MenuOption[];
   className?: string;
 }
 
