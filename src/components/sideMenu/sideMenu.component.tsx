@@ -18,7 +18,7 @@ export const SideMenu: React.FC<SideMenuProps> = (props: SideMenuProps): JSX.Ele
       </CloseButton>
       <OptionsContainer>
         {options.map(({ label, path, icon: Icon }: MenuOption): JSX.Element => (
-          <Option>
+          <Option key={label}>
             <OptionButton onClick={(): Promise<void> | void => navigate(path)}>
               {Icon && <Icon />}
               {label}

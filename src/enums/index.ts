@@ -1,2 +1,2 @@
 export * from './styles';
-export { Path } from './path.enum';
+export { Path } from './section.enum';

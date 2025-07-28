@@ -5,7 +5,10 @@ import { LandingFrame } from '../layouts';
 
 export const mainRouter = createBrowserRouter([
   {
-    path: Path.Main,
+    path: '/',
     element: <LandingFrame />,
+    children: [
+      { index: true, element: <div /> },
+    ]
   }
 ]);
