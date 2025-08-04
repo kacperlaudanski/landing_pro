@@ -15,4 +15,16 @@ export const GlobalStyles: React.NamedExoticComponent<object> = createGlobalStyl
   p {
     margin: 0;
   }
+
+  button {
+    background: none;
+    border: none;
+    margin: none;
+    padding: none;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
 `;
