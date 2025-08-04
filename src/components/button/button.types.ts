@@ -1,9 +1,7 @@
 import { ButtonTheme, ButtonType } from '../../enums';
+import { ButtonData } from '../../interfaces';
 
-export interface ButtonProps {
-  label: string;
-  onClick: () => void;
-  theme: ButtonTheme;
+export interface ButtonProps extends ButtonData {
   type: ButtonType;
   className?: string;
   fullWidth?: boolean;

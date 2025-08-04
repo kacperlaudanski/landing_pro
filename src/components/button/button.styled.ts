@@ -31,7 +31,6 @@ export const Wrapper: StyledComponent<ButtonBaseProps> = styled.button<ButtonBas
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: baseline;
   padding: 17px 34px;
   border-radius: 99px;
   border: none;
