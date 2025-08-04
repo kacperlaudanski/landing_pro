@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { createGlobalStyle } from 'styled-components';
+
 import { Color } from './enums';
 
 export const GlobalStyles: React.NamedExoticComponent<object> = createGlobalStyle`
@@ -14,6 +15,7 @@ export const GlobalStyles: React.NamedExoticComponent<object> = createGlobalStyl
 
   p {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
   }
 
   button {
