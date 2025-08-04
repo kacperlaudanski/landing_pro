@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
-import { Color } from '../../enums';
 
+import { Color } from '../../enums';
 import { StyledComponent } from '../../types';
 
 export const Wrapper: StyledComponent = styled.div`
