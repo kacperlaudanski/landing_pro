@@ -4,8 +4,10 @@ import { Color, FontWeight } from '../../enums';
 import { StyledComponent } from '../../types';
 
 export const Wrapper: StyledComponent = styled.footer`
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: ${Color.Gray100};
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 `;

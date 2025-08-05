@@ -55,7 +55,7 @@ export const Headline: StyledComponent = styled.p`
   margin: 0;
 
   @media ${Breakpoint.SmallDesktop} {
-    font-size: 84px;
+    font-size: 64px;
   }
 `;
 
