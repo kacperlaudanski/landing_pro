@@ -7,6 +7,7 @@ import { StyledComponent } from '../../types';
 import { OptionBaseProps } from './navbar.types';
 
 export const Wrapper: StyledComponent = styled.nav`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

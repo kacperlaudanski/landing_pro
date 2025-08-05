@@ -1,14 +1,15 @@
 import { createBrowserRouter } from 'react-router';
 
-import { Path } from '../enums';
 import { LandingFrame } from '../layouts';
+
+import { Main } from './main/main';
 
 export const mainRouter = createBrowserRouter([
   {
     path: '/',
     element: <LandingFrame />,
     children: [
-      { index: true, element: <div /> },
+      { index: true, element: <Main /> },
     ]
   }
 ]);
