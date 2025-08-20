@@ -1,8 +1,5 @@
-import { LucideIcon } from 'lucide-react';
+import { FeatureCardData } from '../../interfaces';
 
-export interface FeatureCardProps {
-  headline: string;
-  icon: LucideIcon;
-  supportingText: string;
+export interface FeatureCardProps extends FeatureCardData {
   className?: string;
 }

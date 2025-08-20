@@ -14,6 +14,5 @@ export const ContentWrapper: StyledComponent = styled.main`
   width: 100%;
   max-width: 1280px;
   padding: 40px 80px;
-  height: 1000px;
   margin: 0 auto;
 `;

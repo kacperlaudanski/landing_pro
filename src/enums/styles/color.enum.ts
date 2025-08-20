@@ -5,6 +5,7 @@ export enum Color {
   Gray300 = '#cccccc',
   Gray600 = '#616161',
   Gray700 = '#717171',
+  Gray800 = '#313131',
   Blue200 = '#A7D0FF',
   Blue500 = '#0A74F1',
   Blue700 = '#0654AF'
