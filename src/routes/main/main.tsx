@@ -31,8 +31,13 @@ export const Main: React.FC = (): JSX.Element => {
           </BenefitsSubheader>
         </BenefitsHeaderContainer>
         <BenefitsWrapper>
-          {benefitsData.map((benefit: FeatureCardData): JSX.Element => (
-            <FeatureCard headline={benefit.headline} icon={benefit.icon} supportingText={benefit.supportingText} />
+          {benefitsData.map((benefit: FeatureCardData, index: number): JSX.Element => (
+            <FeatureCard
+              headline={benefit.headline}
+              icon={benefit.icon}
+              key={`${benefit.headline}_${index}`}
+              supportingText={benefit.supportingText}
+            />
           ))}
         </BenefitsWrapper>
       </BenefitsSectionWrapper>

@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 
-import { Color } from '../../enums';
+import { Breakpoint, Color } from '../../enums';
 import { StyledComponent } from '../../types';
 
 export const Wrapper: StyledComponent = styled.div`
@@ -13,6 +13,10 @@ export const Wrapper: StyledComponent = styled.div`
 export const ContentWrapper: StyledComponent = styled.main`
   width: 100%;
   max-width: 1280px;
-  padding: 40px 80px;
+  padding: 40px 16px;
   margin: 0 auto;
+
+  @media ${Breakpoint.SmallDesktop} {
+    padding: 40px 80px;
+  }
 `;
