@@ -4,6 +4,10 @@ import { createGlobalStyle } from 'styled-components';
 import { Color } from './enums';
 
 export const GlobalStyles: React.NamedExoticComponent<object> = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     width: 100%;
     margin: 0;

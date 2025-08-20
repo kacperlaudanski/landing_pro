@@ -9,7 +9,6 @@ import {
   HighlightedText,
   Logo,
   LogoWrapper,
-  SocialIcon,
   SocialItem,
   SocialsContainer,
   SupportingText,
