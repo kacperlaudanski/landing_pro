@@ -1,6 +1,5 @@
-export interface CustomerReviewProps {
-  customer: string;
-  review: string;
-  date: number;
+import { CustomerReviewData } from '../../interfaces';
+
+export interface CustomerReviewProps extends CustomerReviewData {
   className?: string;
 }

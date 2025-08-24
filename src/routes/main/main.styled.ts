@@ -44,6 +44,11 @@ export const BenefitsWrapper: StyledComponent = styled.div`
 `;
 
 export const ReviewsSectionWrapper: StyledComponent = styled.div`
-  display: flex;
   margin-top: 160px;
+  text-align: center;
+`;
+
+export const ReviewSectionHeader: StyledComponent = styled.h2`
+  font-size: 64px;
+  font-weight: ${FontWeight.SemiBold};
 `;

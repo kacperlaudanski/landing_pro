@@ -1,13 +1,21 @@
 import { JSX } from 'react';
 
-import { FeatureCard, HeroBanner } from '../../components';
-import { CustomerReview } from '../../components/customerReview/customerReview.component';
+import { CustomerReviewGroup, FeatureCard, HeroBanner } from '../../components';
 import { ButtonTheme } from '../../enums';
 import { FeatureCardData } from '../../interfaces';
 
 import HeroImage from './images/hero.png';
-import { benefitsData } from './main.consts';
-import { BenefitsHeader, BenefitsHeaderContainer, BenefitsSectionWrapper, BenefitsSubheader, BenefitsWrapper, ReviewsSectionWrapper, Wrapper } from './main.styled';
+import { benefitsData, customerReviewData } from './main.consts';
+import {
+  BenefitsHeader,
+  BenefitsHeaderContainer,
+  BenefitsSectionWrapper,
+  BenefitsSubheader,
+  BenefitsWrapper,
+  ReviewSectionHeader,
+  ReviewsSectionWrapper,
+  Wrapper,
+} from './main.styled';
 
 export const Main: React.FC = (): JSX.Element => {
   return (
@@ -43,7 +51,10 @@ export const Main: React.FC = (): JSX.Element => {
         </BenefitsWrapper>
       </BenefitsSectionWrapper>
       <ReviewsSectionWrapper>
-        <CustomerReview customer="John kowalski" date={1758486721} review='Lorem ipsum dolor sit amet consectetur. Malesuada et ut vitae eget. Leo viverra fringilla faucibus proin lacinia ornare amet. Aliquam mi eros dapibus pulvinar morbi aenean. Sit in donec quisque turpis. Tortor aliquam auctor elementum sodales porttitor viverra.' />
+        <ReviewSectionHeader>
+          Customer’s reviews
+        </ReviewSectionHeader>
+        <CustomerReviewGroup items={customerReviewData} itemsPerPage={3} />
       </ReviewsSectionWrapper>
     </Wrapper>
   )
