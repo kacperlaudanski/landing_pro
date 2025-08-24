@@ -42,3 +42,8 @@ export const BenefitsWrapper: StyledComponent = styled.div`
   gap: 20px;
   flex-wrap: wrap;
 `;
+
+export const ReviewsSectionWrapper: StyledComponent = styled.div`
+  display: flex;
+  margin-top: 160px;
+`;
